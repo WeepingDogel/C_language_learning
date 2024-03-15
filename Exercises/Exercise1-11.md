@@ -40,7 +40,7 @@ To test the word count program provided, I would need to compile and run the pro
 1. Compile the program using a C compiler.
 2. Run the compiled program.
 3. Input different types of text, including:
-   - Text with multipl一家e whitespace characters (spaces, tabs, newlines) between words.
+   - Text with multiple whitespace characters (spaces, tabs, newlines) between words.
    - Text with special characters.
    - Text with long words.
    - Empty text.
