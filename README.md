@@ -8,6 +8,7 @@ This repository stores my notes and codes of C language basics.
 * [Variables and Arithmetic Expressions](./Chapter1-A-Tutorial-Introduction/Variables-and-Arithmetic-Expressions.md)
 * [Symbolic Constants](./Chapter1-A-Tutorial-Introduction/Symbolic-Constants.md)
 * [Character Input and Output](./Chapter1-A-Tutorial-Introduction/Character-Input-and-Output.md)
+* [Arrays](./Chapter1-A-Tutorial-Introduction/Arrays.md)
 
 
 ## Codes
