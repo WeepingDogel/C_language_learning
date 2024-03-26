@@ -1,3 +1,5 @@
+## Character Array
+
 ```c
 #include <stdio.h>
 #define MAXLINE 1000
