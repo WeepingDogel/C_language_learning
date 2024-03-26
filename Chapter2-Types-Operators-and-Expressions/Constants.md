@@ -4,7 +4,6 @@
 
 1. **Standard Integer (int)**: A number like `1234` without any suffix is considered an `int`.
 2. **Long Integer**: Add an `l` or `L` to make it a `long`, like `123456789L`. If it's too large for an int, it's automatically a `long`.
-
 3. **Unsigned Integer**: Add a `u` or `U` to make it `unsigned`, like `1234U`.
 4. **Unsigned Long Integer**: Combine them for an `unsigned long`, using `ul` or `UL`, like `123456789UL`.
 
