@@ -95,11 +95,11 @@ The size of these objects is also machine-dependent. There are also ***arrays***
   - Condition is checked after each iteration.
   - Ensures that the code block executes at least once.
 
-### Loop Control Statements:
+### 4. Loop Control Statements:
 - ***`break`***: Exits the loop it's in.
 - ***`continue`***: Skips the current iteration and goes to the next iteration.
 
-### Infinite Loop:
+### 5. Infinite Loop:
 - **Definition**: A loop that never terminates if the loop condition is always true.
 - **Example**:
   ```c

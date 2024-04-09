@@ -23,7 +23,7 @@ If **you haven't botched anything**, such as omitting a character or misspelling
 By typing the command:
 
 ```
-weepingdogel@WeepingDogel-Arch ~/P/C/C/1.1-Get-Started (master)> ./a.out
+./a.out
 ```
 
 It will print:
