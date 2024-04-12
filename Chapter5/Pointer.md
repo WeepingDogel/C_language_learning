@@ -76,3 +76,27 @@ This demonstrates that `arr[i]` and `*(ptr + i)` are equivalent ways of accessin
 
 So, even though arrays and pointers in C are different, they are deeply interconnected. It's important to understand this relationship to write efficient and correct C programs.
 
+## Address Arithmetic
+
+Address arithmetic, often referred to as pointer arithmetic in C, involves performing operations on memory addresses. Here's a concise summary:
+1. **Pointer Types**: When you declare a pointer in C, it has a type, which determines the size of the steps it takes when you perform arithmetic on it.
+2. **Addition and Subtraction**: You can add or subtract integers to/from pointers. Adding 1 to a pointer makes it point to the next element of its type, and subtracting 1 makes it point to the previous element.
+3. **Pointer Increment/Decrement**: Using `++` or `--` on a pointer increments or decrements the address it holds by the size of the type it points to.
+4. **Pointer Differences**: Subtracting one pointer from another gives the number of elements between them, not the byte difference.
+5. **Type Casting**: You can cast pointers to other types, but it's important to be careful, as this can lead to undefined behavior if not done correctly.
+6. **No Multiplication/Division**: You cannot multiply or divide pointers because the semantics of such operations are not defined in C.
+Remember that pointer arithmetic is type-sensitive and the result depends on the type of the pointer. It's a powerful feature that should be used with care to avoid accessing out-of-bounds memory and causing undefined behavior.
+<t-tok-tts> Address arithmetic is like navigating a city grid; you need to move the right number of blocks (memory units) to reach the desired location. 
+
+## Character Pointer
+
+Understanding character pointers and functions in C is a crucial aspect of managing strings and memory. Here's a brief overview:
+1. **Character Pointers**: A character pointer in C is a variable that stores the memory address of a character. Since strings in C are arrays of characters, character pointers are often used to point to the first character of a string.
+2. **String Literals**: When you assign a string literal to a character pointer, the pointer points to the first character of the string. The string itself is stored in read-only memory.
+3. **Pointer Arithmetic**: You can use pointer arithmetic on character pointers to navigate through a string. For instance, `pointer + 1` points to the next character in the string.
+4. **Dereferencing**: Dereferencing a character pointer with `*pointer` gives you the value of the character at that memory address.
+5. **Functions and Pointers**: Many standard library functions in C, such as `strcpy`, `strlen`, `strcat`, etc., use character pointers to operate on strings. For example, `strcpy(destination, source)` copies a string from the source to the destination using character pointers.
+6. **Passing to Functions**: You can pass strings to functions by providing the character pointer of the string. Inside the function, you can use the pointer to access the string.
+7. **Returning Pointers**: Functions can return character pointers. Be cautious when returning pointers to local variables, as these will go out of scope when the function returns, leading to undefined behavior.
+8. **Null-Termination**: Strings in C are null-terminated. This means the end of the string is marked with a special null character (`'\0'`), which is used by string-handling functions to determine the end of the string.
+9. **const Qualifier**: When working with character pointers that should not modify the string, use the `const` qualifier to pro...
