@@ -30,7 +30,7 @@ int strend(char *s, char *t)
     while (t_end > t)
     {
         // also check if s_end has reached the start of s
-        if (s_end == s || *--s_end != *--t_end) 
+        if (s_end == s || *--s_end != *--t_end)
         {
             return 0;
         }
