@@ -7,7 +7,10 @@ Write a program to count blanks, tabs, and newlines.
 #include <stdio.h>
 
 int main()
-{
+{  
+    // nb: The number of blanks 
+    // nt: The number of tabs.
+    // nl: The number of lines.
     int c, nb = 0, nt = 0, nl = 0;
     while ((c = getchar()) != EOF)
     {
